@@ -1,3 +1,5 @@
+![The Workflow](assets/banner.svg)
+
 # The content marketing skills pack
 
 Ten Claude Agent Skills that turn your agent into a full content marketing team: SEO, AI search, copywriting, strategy, psychology, social, ads, cold email, conversion, and lead magnets. Free, from The Workflow.
@@ -19,7 +21,7 @@ Drop them into Claude Code, or any tool that supports the [Agent Skills spec](ht
 | [`cro`](skills/cro) | Analyzes and improves conversion rates on landing pages and forms |
 | [`lead-magnets`](skills/lead-magnets) | Plans lead magnets that actually capture emails and convert |
 
-Each skill is a self-contained folder: a `SKILL.md` with the full instructions Claude follows, plus `references/` and `evals/` with supporting detail. Nothing to configure, nothing to prompt-engineer yourself.
+Each skill is a self-contained folder with a single `SKILL.md`: the full instructions Claude follows for that discipline. Nothing to configure, nothing to prompt-engineer yourself.
 
 ## Quick start
 
@@ -57,7 +59,7 @@ Skills also reference each other. Ask for landing page copy and `copywriting` mi
 
 ## Why these ten
 
-Picked from a much bigger open-source pack, filtered down to one skill per discipline so you get a full-funnel toolkit instead of ten variations on the same thing: something to get found (SEO, AI SEO), something to say it well (copywriting, psychology), something to plan it (content strategy), something to distribute it (social, ads, cold email), and something to turn attention into leads (CRO, lead magnets).
+Built as one skill per discipline, so you get a full-funnel toolkit instead of ten variations on the same thing: something to get found (SEO, AI SEO), something to say it well (copywriting, psychology), something to plan it (content strategy), something to distribute it (social, ads, cold email), and something to turn attention into leads (CRO, lead magnets).
 
 ---
 

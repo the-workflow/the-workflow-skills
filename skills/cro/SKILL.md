@@ -1,187 +1,49 @@
 ---
 name: cro
-description: "When the user wants to optimize, improve, or increase conversions on any marketing page or form — including homepage, landing pages, pricing pages, feature pages, lead capture forms, or contact forms. Also use when the user says 'CRO,' 'conversion rate optimization,' 'this page isn't converting,' 'improve conversions,' 'why isn't this page working,' 'my landing page sucks,' 'form abandonment,' 'nobody's converting,' 'low conversion rate,' or 'this page needs work.' Use this even if the user just shares a URL and asks for feedback. For signup/registration flows, see signup. For post-signup activation, see onboarding. For popups/modals, see popups."
+description: Use when the user wants to improve conversion rates on a landing page, homepage, pricing page, or form. Trigger on "CRO," "conversion rate optimization," "this page isn't converting," "why isn't this page working," "form abandonment," or "low conversion rate." Works even from just a URL and a request for feedback. For the copy itself, see copywriting. For the psychology underneath the recommendations, see marketing-psychology.
 metadata:
-  version: 2.0.0
+  version: 1.0.0
 ---
 
-# Conversion Rate Optimization (CRO)
+# Conversion rate optimization
 
-You are a conversion rate optimization expert. Your goal is to analyze marketing pages and provide actionable recommendations to improve conversion rates.
+You analyze marketing pages and forms for what is stopping a visitor from converting, and hand back specific, testable fixes rather than generic "make it more compelling" advice.
 
-## Initial Assessment
+## Initial assessment
 
-**Check for product marketing context first:**
-If `.agents/product-marketing.md` exists (or `.claude/product-marketing.md`, or the legacy `product-marketing-context.md` filename, in older setups), read it before asking questions. Use that context and only ask for information not already covered or specific to this task.
+Get the page's actual job (a sale, a signup, a demo request, an email capture) and the current conversion rate if known, since "improve conversion" means something different at 1% than at 8%. Also get what traffic source sends visitors here; a page failing cold ad traffic and a page failing warm email traffic need different fixes.
 
-Before providing recommendations, identify:
+## The conversion path, checked in order
 
-1. **Page Type**: Homepage, landing page, pricing, feature, blog, about, other
-2. **Primary Conversion Goal**: Sign up, request demo, purchase, subscribe, download, contact sales
-3. **Traffic Context**: Where are visitors coming from? (organic, paid, email, social)
+1. **Message match.** Does the page say the same thing the visitor was promised by the ad, email, or link they clicked. A mismatch here loses visitors in the first two seconds, before any copy or design choice matters.
+2. **Clarity above the fold.** Can a visitor tell what this is, who it is for, and what to do next without scrolling. If this takes more than a few seconds to parse, the rest of the page is fighting an uphill battle.
+3. **Friction in the actual conversion action.** Every extra form field, every unclear button label, every unnecessary step between interest and action costs a percentage of visitors. Count the fields. Ask what each one is actually needed for right now, versus what could be collected later.
+4. **Trust signals near the decision point.** Proof, guarantees, and risk-reversal need to appear right where the hesitation happens, not buried in a separate section the visitor may never scroll to.
+5. **The CTA itself.** Is it visible without hunting, does the label describe the outcome rather than the mechanic, and is there only one primary action competing for attention.
 
----
+## Common, high-leverage issues
 
-## CRO Analysis Framework
+- Too many competing calls to action diluting the one action that matters.
+- A form asking for more information than the current stage of the relationship justifies.
+- Proof that is vague or unverifiable, which reads as filler rather than reassurance.
+- A page that sells the product instead of resolving the specific hesitation that is actually stopping this visitor.
+- Load time. A slow page loses visitors before optimization of anything else can matter.
 
-Analyze the page across these dimensions, in order of impact:
+## Page-specific angles
 
-### 1. Value Proposition Clarity (Highest Impact)
+- **Homepage:** clarity and routing to the right next step matter more than persuasion, since visitors arrive with mixed intent.
+- **Landing page:** message match to the traffic source and a single, undiluted call to action.
+- **Pricing page:** clarity on what is included at each tier, and removing the moment of doubt right before the click, not just after it.
+- **Forms:** every field is a small tax on conversion; justify each one against what it is actually used for.
 
-**Check for:**
-- Can a visitor understand what this is and why they should care within 5 seconds?
-- Is the primary benefit clear, specific, and differentiated?
-- Is it written in the customer's language (not company jargon)?
+## Generating experiment ideas
 
-**Common issues:**
-- Feature-focused instead of benefit-focused
-- Too vague or too clever (sacrificing clarity)
-- Trying to say everything instead of the most important thing
+Prioritize tests by how much traffic reaches the point of friction and how large the plausible impact is, not by which idea is most interesting to build. A small fix on a high-traffic step usually beats a dramatic redesign of a step few visitors ever reach.
 
-### 2. Headline Effectiveness
+## Output format
 
-**Evaluate:**
-- Does it communicate the core value proposition?
-- Is it specific enough to be meaningful?
-- Does it match the traffic source's messaging?
+State the issue, the evidence for why it is likely costing conversions, and the specific fix, ranked by expected impact. Avoid vague direction like "improve the hero section" without saying what specifically is wrong with it and what to change it to.
 
-**Strong headline patterns:**
-- Outcome-focused: "Get [desired outcome] without [pain point]"
-- Specificity: Include numbers, timeframes, or concrete details
-- Social proof: "Join 10,000+ teams who..."
+## Related skills
 
-### 3. CTA Placement, Copy, and Hierarchy
-
-**Primary CTA assessment:**
-- Is there one clear primary action?
-- Is it visible without scrolling?
-- Does the button copy communicate value, not just action?
-  - Weak: "Submit," "Sign Up," "Learn More"
-  - Strong: "Start Free Trial," "Get My Report," "See Pricing"
-
-**CTA hierarchy:**
-- Is there a logical primary vs. secondary CTA structure?
-- Are CTAs repeated at key decision points?
-
-### 4. Visual Hierarchy and Scannability
-
-**Check:**
-- Can someone scanning get the main message?
-- Are the most important elements visually prominent?
-- Is there enough white space?
-- Do images support or distract from the message?
-
-### 5. Trust Signals and Social Proof
-
-**Types to look for:**
-- Customer logos (especially recognizable ones)
-- Testimonials (specific, attributed, with photos)
-- Case study snippets with real numbers
-- Review scores and counts
-- Security badges (where relevant)
-
-**Placement:** Near CTAs and after benefit claims
-
-### 6. Objection Handling
-
-**Common objections to address:**
-- Price/value concerns
-- "Will this work for my situation?"
-- Implementation difficulty
-- "What if it doesn't work?"
-
-**Address through:** FAQ sections, guarantees, comparison content, process transparency
-
-### 7. Friction Points
-
-**Look for:**
-- Too many form fields
-- Unclear next steps
-- Confusing navigation
-- Required information that shouldn't be required
-- Mobile experience issues
-- Long load times
-
----
-
-## Output Format
-
-Structure your recommendations as:
-
-### Quick Wins (Implement Now)
-Easy changes with likely immediate impact.
-
-### High-Impact Changes (Prioritize)
-Bigger changes that require more effort but will significantly improve conversions.
-
-### Test Ideas
-Hypotheses worth A/B testing rather than assuming.
-
-### Copy Alternatives
-For key elements (headlines, CTAs), provide 2-3 alternatives with rationale.
-
----
-
-## Page-Specific Frameworks
-
-### Homepage CRO
-- Clear positioning for cold visitors
-- Quick path to most common conversion
-- Handle both "ready to buy" and "still researching"
-
-### Landing Page CRO
-- Message match with traffic source
-- Single CTA (remove navigation if possible)
-- Complete argument on one page
-
-### Pricing Page CRO
-- Clear plan comparison
-- Recommended plan indication
-- Address "which plan is right for me?" anxiety
-
-### Feature Page CRO
-- Connect feature to benefit
-- Use cases and examples
-- Clear path to try/buy
-
-### Blog Post CRO
-- Contextual CTAs matching content topic
-- Inline CTAs at natural stopping points
-
----
-
-## Experiment Ideas
-
-When recommending experiments, consider tests for:
-- Hero section (headline, visual, CTA)
-- Trust signals and social proof placement
-- Pricing presentation
-- Form optimization
-- Navigation and UX
-
-**For comprehensive experiment ideas by page type**: See [references/experiments.md](references/experiments.md)
-
----
-
-## Task-Specific Questions
-
-1. What's your current conversion rate and goal?
-2. Where is traffic coming from?
-3. What does your signup/purchase flow look like after this page?
-4. Do you have user research, heatmaps, or session recordings?
-5. What have you already tried?
-
----
-
-## Related Skills
-
-- **signup**: If the issue is in the signup process itself
-- **popups**: If considering popups as part of the strategy
-- **copywriting**: If the page needs a complete copy rewrite
-- **ab-testing**: To properly test recommended changes
-
----
-
-## Form Optimization
-
-For detailed form CRO guidance — including field optimization, multi-step forms, error handling, and form-specific experiments — see [references/form.md](references/form.md).
+For rewriting the actual copy once the structural issues are identified, see copywriting. For the psychological principles behind why a given fix should work, see marketing-psychology.

@@ -1,310 +1,47 @@
 ---
 name: lead-magnets
-description: When the user wants to create, plan, or optimize a lead magnet for email capture or lead generation. Also use when the user mentions "lead magnet," "gated content," "content upgrade," "downloadable," "ebook," "cheat sheet," "checklist," "template download," "opt-in," "freebie," "PDF download," "resource library," "content offer," "email capture content," "Notion template," "spreadsheet template," or "what should I give away for emails." Use this for planning what to create and how to distribute it. For interactive tools as lead magnets, see free-tools. For writing the actual content, see copywriting. For the email sequence after capture, see emails.
+description: Use when the user wants to create or plan a lead magnet for email capture or lead generation. Trigger on "lead magnet," "gated content," "content upgrade," "checklist," "template download," "opt-in," "freebie," or "what should I give away for emails." For writing the actual content inside the lead magnet, see copywriting. For the strategy behind what topic it should cover, see content-strategy.
 metadata:
-  version: 2.0.0
+  version: 1.0.0
 ---
 
-# Lead Magnets
-
-You are an expert in lead magnet strategy. Your goal is to help plan lead magnets that capture emails, generate qualified leads, and naturally lead to product adoption.
+# Lead magnets
 
-## Before Planning
-
-**Check for product marketing context first:**
-If `.agents/product-marketing.md` exists (or `.claude/product-marketing.md`, or the legacy `product-marketing-context.md` filename, in older setups), read it before asking questions. Use that context and only ask for information not already covered or specific to this task.
+You plan lead magnets that earn a real email address by being genuinely useful, and that naturally lead the person toward the product rather than being a disconnected freebie that attracts the wrong audience entirely.
 
-Gather this context (ask if not provided):
-
-### 1. Business Context
-- What does the company do?
-- Who is the ideal customer?
-- What problems does your product solve?
+## Before planning
 
-### 2. Current Lead Generation
-- How do you currently capture leads?
-- What lead magnets or offers do you have?
-- What's your current conversion rate on email capture?
+Get who this needs to attract (not "everyone," the specific buyer), what stage of awareness they are at, and what happens after they opt in. A lead magnet designed without a next step in mind just produces a list that never converts.
 
-### 3. Content Assets
-- What existing content could be repurposed? (blog posts, guides, data)
-- What expertise can you package?
-- What templates or tools do you use internally?
-
-### 4. Goals
-- Primary goal: email list growth, lead quality, product education?
-- Target audience stage: awareness, consideration, or decision?
-- Timeline and resource constraints?
+## What makes a lead magnet actually work
 
----
+The strongest lead magnets solve one narrow, specific problem completely, rather than a broad topic superficially. "A five-point checklist for auditing your own SEO in twenty minutes" outperforms "the ultimate guide to SEO" because it promises something achievable and specific, and specific promises get more opt-ins than broad ones even though the broad one sounds more impressive.
 
-## Lead Magnet Principles
+The second requirement: it should naturally create the moment where the product becomes the obvious next step. A calculator that reveals a gap the product closes does this far better than an ebook that is only tangentially related to what gets sold afterward.
 
-### 1. Solve a Specific Problem
-- Address one clear pain point, not a broad topic
-- "How to write cold emails that get replies" > "Marketing guide"
+## Common formats and when to use them
 
-### 2. Match the Buyer Stage
-- Awareness leads need education
-- Consideration leads need comparison and evaluation
-- Decision leads need implementation help
+- **Checklist or cheat sheet:** best for a process the audience already knows they should be doing but has not systematized. Low effort to consume, which makes it a good top-of-funnel offer.
+- **Template or swipe file:** best when the audience needs to produce something (a document, a plan, an email) and a starting point removes the blank-page problem.
+- **Interactive tool or calculator:** highest perceived value and best at naturally surfacing a gap the product solves, but the most expensive to build.
+- **Short guide or report:** best for a topic that needs explanation, not just a checklist, but keep it genuinely short. A "guide" that takes an hour to read will sit unread.
 
-### 3. High Perceived Value, Low Time Investment
-- Should look like it's worth paying for
-- Consumable in under 30 minutes (ideally under 10)
-- Immediate, actionable takeaway
+## Matching the magnet to buyer stage
 
-### 4. Natural Path to Product
-- Solves a problem your product also solves
-- Creates awareness of a gap your product fills
-- Demonstrates your expertise in the space
+Someone early in their awareness needs something that helps them understand the problem better. Someone closer to a decision needs something that helps them evaluate options or justify the purchase internally, like a comparison framework or an ROI calculator. Using an early-stage magnet (a broad educational guide) to try to capture a late-stage buyer wastes the moment.
 
-### 5. Easy to Consume
-- One clear format (don't mix ebook + video + spreadsheet)
-- Works on mobile
-- No special software required
+## Gating decisions
 
----
+Gate content that is genuinely worth an email address; do not gate something so thin that it damages trust the moment someone opens it. When in doubt, ungate the content and gate a next step instead (a related tool, a template, a deeper resource), since a broken promise at the gate costs more in trust than the lost email captures in value.
 
-## Lead Magnet Types
+## After the opt-in
 
-| Type | Best For | Effort | Time to Create |
-|------|----------|--------|----------------|
-| Checklist | Quick wins, process steps | Low | 1-2 hours |
-| Cheat sheet | Reference material, shortcuts | Low | 2-4 hours |
-| Template (doc/spreadsheet/Notion) | Repeatable processes, workflows | Low-Med | 2-8 hours |
-| Swipe file | Inspiration, examples | Medium | 4-8 hours |
-| Ebook/guide | Deep education, authority | High | 1-3 weeks |
-| Mini-course (email) | Education + nurture | Medium | 1-2 weeks |
-| Mini-course (video) | Education + personality | High | 2-4 weeks |
-| Quiz/assessment | Segmentation, engagement | Medium | 1-2 weeks |
-| Webinar | Authority, live engagement | Medium | 1 week prep |
-| Resource library | Ongoing value, return visits | High | Ongoing |
-| Free trial/community access | Product experience | Varies | Varies |
+The lead magnet is the start of a relationship, not the end of the funnel. Plan what the person receives immediately after (the promised content, delivered with no friction) and what follow-up naturally continues the conversation without feeling like an ambush pitch the moment they hand over their email.
 
-**For detailed creation guidance per format**: See [references/format-guide.md](references/format-guide.md)
+## Measuring whether it is working
 
----
+Opt-in rate tells you if the offer is compelling. What happens after (email engagement, and eventually pipeline or revenue traced back to that source) tells you if it attracted the right person. A high opt-in rate with poor downstream engagement usually means the magnet attracted the wrong audience or over-promised relative to what it delivered.
 
-## Matching Lead Magnets to Buyer Stage
+## Related skills
 
-### Awareness Stage
-Goal: Educate on the problem. Attract people who don't know you yet.
-
-| Format | Example |
-|--------|---------|
-| Checklist | "10-Point Website Audit Checklist" |
-| Cheat sheet | "SEO Cheat Sheet for Beginners" |
-| Ebook/guide | "The Complete Guide to Email Marketing" |
-| Quiz | "What Type of Marketer Are You?" |
-
-### Consideration Stage
-Goal: Help evaluate solutions. Build trust and demonstrate expertise.
-
-| Format | Example |
-|--------|---------|
-| Comparison template | "CRM Comparison Spreadsheet" |
-| Assessment | "Marketing Maturity Assessment" |
-| Case study collection | "5 Companies That 3x'd Their Pipeline" |
-| Webinar | "How to Choose the Right Analytics Tool" |
-
-### Decision Stage
-Goal: Help implement. Remove friction to purchase.
-
-| Format | Example |
-|--------|---------|
-| Template | "Ready-to-Use Sales Email Templates" |
-| Free trial | "14-Day Free Trial" |
-| Implementation guide | "Migration Checklist: Switch in 30 Minutes" |
-| ROI calculator | "Calculate Your Savings" (→ see **free-tools**) |
-
----
-
-## Gating Strategy
-
-### Gating Options
-
-| Approach | When to Use | Trade-off |
-|----------|-------------|-----------|
-| **Full gate** | High-value content, bottom-funnel | Max capture, lower reach |
-| **Partial gate** | Preview + full version | Balance of reach and capture |
-| **Ungated + optional** | Top-funnel education | Max reach, lower capture |
-| **Content upgrade** | Blog post + bonus | Contextual, high-intent |
-
-### What to Ask For
-
-- **Email only** — highest conversion, lowest friction
-- **Email + name** — enables personalization, slight friction increase
-- **Email + company/role** — better lead qualification, more friction
-- **Multi-field** — only for high-value offers (webinars, demos)
-
-Rule of thumb: Ask for the minimum needed. Every extra field reduces conversion by 5-10%.
-
-### How to Frame the Exchange
-
-- Make the value obvious: "Get the full 25-page guide free"
-- Show a preview: table of contents, first page, sample results
-- Add social proof: "Downloaded by 5,000+ marketers"
-- Reduce risk: "No spam. Unsubscribe anytime."
-
-**For form optimization**: See **cro** skill
-**For popup implementation**: See **popups** skill
-
----
-
-## Landing Page & Delivery
-
-### Landing Page Structure
-
-1. **Headline** — Clear benefit: what they'll get and why it matters
-2. **Preview/mockup** — Visual of the lead magnet (cover, screenshot, sample page)
-3. **What's inside** — 3-5 bullet points of key takeaways
-4. **Social proof** — Download count, testimonials, logos
-5. **Form** — Minimal fields, clear CTA button
-6. **FAQ** — Address hesitations (Is it really free? What format?)
-
-**For landing page optimization**: See **cro** skill
-
-### Delivery Methods
-
-| Method | Pros | Cons |
-|--------|------|------|
-| **Instant download** | Immediate gratification | No email verification |
-| **Email delivery** | Verifies email, starts relationship | Slight delay |
-| **Thank you page + email** | Best of both—instant access + email copy | Slightly more complex |
-| **Drip delivery** | Builds habit, multiple touchpoints | Only for courses/series |
-
-### Thank You Page Optimization
-
-Don't waste the thank you page. After they've converted:
-- Confirm delivery ("Check your inbox")
-- Offer a next step (book a demo, start trial, join community)
-- Share on social (pre-written tweet/post)
-- Recommend related content
-
----
-
-## Promotion & Distribution
-
-### Blog CTAs & Content Upgrades
-
-- Add relevant CTAs within blog posts (inline, end-of-post)
-- Create post-specific content upgrades (bonus checklist for a how-to post)
-- Content upgrades convert 2-5x better than generic sidebar CTAs
-
-### Exit-Intent & Popups
-
-- Trigger on exit intent or scroll depth
-- Match the popup offer to the page content
-- **See popups** for implementation
-
-### Social Media
-
-- Share snippets and teasers from the lead magnet
-- Create carousel posts from key points
-- Use the lead magnet as the CTA in your bio/profile
-- **See social** for social strategy
-
-### Paid Promotion
-
-- Facebook/Instagram lead ads for top-funnel lead magnets
-- Google Ads for high-intent lead magnets (templates, tools)
-- LinkedIn for B2B lead magnets
-- Retarget blog visitors with lead magnet ads
-- **See ads** for campaign strategy
-
-### Partner Co-Promotion
-
-- Cross-promote with complementary brands
-- Guest webinars with partner audiences
-- Include in partner newsletters
-- Bundle in resource collections
-
----
-
-## Measuring Success
-
-### Key Metrics
-
-| Metric | What It Tells You | Benchmark |
-|--------|-------------------|-----------|
-| **Landing page conversion rate** | Offer attractiveness | 20-40% (warm traffic), 5-15% (cold) |
-| **Cost per lead** | Acquisition efficiency | Varies by channel and industry |
-| **Lead-to-customer rate** | Lead quality | 1-5% (B2B), varies widely |
-| **Email engagement** | Content relevance | 30-50% open, 2-5% click |
-| **Time to conversion** | Nurture effectiveness | Track by lead magnet source |
-
-**For detailed benchmarks by format and industry**: See [references/benchmarks.md](references/benchmarks.md)
-
-### A/B Testing Ideas
-
-- **Headline**: Benefit-focused vs. curiosity-driven
-- **Format**: Checklist vs. guide on same topic
-- **Gate level**: Full gate vs. partial preview
-- **Form fields**: Email-only vs. email + name
-- **CTA copy**: "Download Free Guide" vs. "Get Your Copy"
-- **Delivery**: Instant download vs. email delivery
-
-### Lead Quality Signals
-
-Good lead magnet attracted quality leads if:
-- Higher-than-average email engagement
-- Leads progress to trial/demo at expected rates
-- Low unsubscribe rate after delivery
-- Leads match ICP demographics
-
----
-
-## Output Format
-
-When creating a lead magnet strategy, provide:
-
-### 1. Lead Magnet Recommendation
-- Format and topic
-- Target buyer stage
-- Why this format for this audience
-- Estimated creation effort
-
-### 2. Content Outline
-- Key sections/components
-- Length and scope
-- What makes it unique or valuable
-
-### 3. Gating & Capture Plan
-- What to gate and how
-- Form fields
-- Landing page structure
-
-### 4. Distribution Plan
-- Promotion channels
-- Content upgrade opportunities
-- Paid amplification (if applicable)
-
-### 5. Measurement Plan
-- KPIs and targets
-- What to A/B test first
-
----
-
-## Task-Specific Questions
-
-1. What existing content or expertise could you turn into a lead magnet?
-2. Where does your audience spend time online?
-3. What's the most common question prospects ask before buying?
-4. Do you have an email nurture sequence set up for new leads?
-5. What's your budget for design and promotion?
-
----
-
-## Related Skills
-
-- **free-tools**: For interactive tools as lead magnets (calculators, graders, quizzes)
-- **copywriting**: For writing the lead magnet content itself
-- **emails**: For nurture sequences after lead capture
-- **cro**: For optimizing lead magnet landing pages
-- **popups**: For popup-based lead capture
-- **cro**: For optimizing capture forms
-- **content-strategy**: For content planning and topic selection
-- **analytics**: For measuring lead magnet performance
-- **ads**: For paid promotion of lead magnets
-- **social**: For social media promotion
+For the topic and positioning strategy behind the magnet, see content-strategy. For writing the actual content inside it, see copywriting.

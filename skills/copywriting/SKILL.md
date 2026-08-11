@@ -1,252 +1,50 @@
 ---
 name: copywriting
-description: When the user wants to write, rewrite, or improve marketing copy for any page — including homepage, landing pages, pricing pages, feature pages, about pages, or product pages. Also use when the user says "write copy for," "improve this copy," "rewrite this page," "marketing copy," "headline help," "CTA copy," "value proposition," "tagline," "subheadline," "hero section copy," "above the fold," "this copy is weak," "make this more compelling," or "help me describe my product." Use this whenever someone is working on website text that needs to persuade or convert. For email copy, see emails. For popup copy, see popups. For editing existing copy, see copy-editing. For the offer underneath the copy (bonuses, guarantees, value framing), see offers.
+description: Use when the user wants to write or improve persuasive marketing copy for a homepage, landing page, pricing page, feature page, or product page. Trigger on "write copy for," "headline help," "CTA copy," "value proposition," "this copy is weak," "make this more compelling," or "help me describe my product." For email copy, see cold-email. For ad copy specifically, see ad-creative. For deciding what to write about rather than how, see content-strategy.
 metadata:
-  version: 2.0.1
+  version: 1.0.0
 ---
 
 # Copywriting
 
-You are an expert conversion copywriter. Your goal is to write marketing copy that is clear, compelling, and drives action.
+You are a conversion copywriter. The job is not to sound clever, it is to make a stranger understand what this is, believe it is true, and know what to do next, in that order.
 
-## Before Writing
+## Before writing
 
-**Check for product marketing context first:**
-If `.agents/product-marketing.md` exists (or `.claude/product-marketing.md`, or the legacy `product-marketing-context.md` filename, in older setups), read it before asking questions. Use that context and only ask for information not already covered or specific to this task.
+Get clear on: who is reading this (their role, their level of awareness of the problem), what they currently believe or use instead, and what single action this page needs to drive. Copy written without a specific reader in mind reads like it was written for everyone, which means it persuades no one.
 
-Gather this context (ask if not provided):
+## The three questions every page has to answer
 
-### 1. Page Purpose
-- What type of page? (homepage, landing page, pricing, feature, about)
-- What is the ONE primary action you want visitors to take?
+1. What is this, in language the reader already uses (not your internal name for it).
+2. Why should I believe this works, for someone like me specifically.
+3. What happens when I click the button.
 
-### 2. Audience
-- Who is the ideal customer?
-- What problem are they trying to solve?
-- What objections or hesitations do they have?
-- What language do they use to describe their problem?
+If a visitor cannot answer all three within the first screen, the page will leak visitors before it gets a chance to persuade them.
 
-### 3. Product/Offer
-- What are you selling or offering?
-- What makes it different from alternatives?
-- What's the key transformation or outcome?
-- Any proof points (numbers, testimonials, case studies)?
+## Structure that tends to work
 
-### 4. Context
-- Where is traffic coming from? (ads, organic, email)
-- What do visitors already know before arriving?
+- **Headline:** the single biggest benefit or the sharpest problem statement, not a clever pun. Specific beats vague every time.
+- **Subheadline:** the mechanism, or who it is for, or the proof point. It does the work the headline did not have room for.
+- **Above the fold:** enough for someone to know if this is relevant to them within five seconds, with a clear next action visible.
+- **Body:** move from problem to mechanism to proof to objection-handling, roughly in that order. Save the weakest proof point for the middle, not the end.
+- **CTA:** describe the outcome of clicking, not the mechanics of clicking. "Start your free trial" beats "Submit."
 
----
+## Writing rules that hold up
 
-## Copywriting Principles
+- One idea per sentence. If a sentence needs a semicolon to hold both halves, it is two sentences.
+- Cut every adjective that is not doing specific work. "Powerful" and "seamless" mean nothing on their own; a number or a named outcome means something.
+- Write at the reading level of someone skimming on a phone, not the reading level of the internal memo that inspired this page.
+- Active voice, present tense, second person. "You get X" beats "Users are provided with X."
+- Real specifics beat generic superiority claims. A named customer, a real number, or a concrete before-and-after outperforms "the best solution on the market" every time, because the reader has heard that claim from every competitor already.
 
-### Clarity Over Cleverness
-If you have to choose between clear and creative, choose clear.
+## Handling objections in the copy itself
 
-### Benefits Over Features
-Features: What it does. Benefits: What that means for the customer.
+The strongest pages address the reader's actual hesitation before they have to go looking for the answer elsewhere (a review site, a competitor, a friend). If price, complexity, or trust is the real blocker, put that answer on the page rather than hoping it does not come up.
 
-### Specificity Over Vagueness
-- Vague: "Save time on your workflow"
-- Specific: "Cut your weekly reporting from 4 hours to 15 minutes"
+## Output format
 
-### Customer Language Over Company Language
-Use words your customers use. Mirror voice-of-customer from reviews, interviews, support tickets.
+Deliver the copy laid out by section (headline, subhead, body blocks, CTA) with a one-line rationale under anything non-obvious, so the reader understands the reasoning and can push back on it intelligently rather than just accepting or rejecting the whole thing.
 
-### One Idea Per Section
-Each section should advance one argument. Build a logical flow down the page.
+## Related skills
 
----
-
-## Writing Style Rules
-
-### Core Principles
-
-1. **Simple over complex** — "Use" not "utilize," "help" not "facilitate"
-2. **Specific over vague** — Avoid "streamline," "optimize," "innovative"
-3. **Active over passive** — "We generate reports" not "Reports are generated"
-4. **Confident over qualified** — Remove "almost," "very," "really"
-5. **Show over tell** — Describe the outcome instead of using adverbs
-6. **Honest over sensational** — Fabricated statistics or testimonials erode trust and create legal liability
-
-### Quick Quality Check
-
-- Jargon that could confuse outsiders?
-- Sentences trying to do too much?
-- Passive voice constructions?
-- Exclamation points? (remove them)
-- Marketing buzzwords without substance?
-
-For thorough line-by-line review, use the **copy-editing** skill after your draft.
-
----
-
-## Best Practices
-
-### Be Direct
-Get to the point. Don't bury the value in qualifications.
-
-❌ Slack lets you share files instantly, from documents to images, directly in your conversations
-
-✅ Need to share a screenshot? Send as many documents, images, and audio files as your heart desires.
-
-### Use Rhetorical Questions
-Questions engage readers and make them think about their own situation.
-- "Hate returning stuff to Amazon?"
-- "Tired of chasing approvals?"
-
-### Use Analogies When Helpful
-Analogies make abstract concepts concrete and memorable.
-
-### Pepper in Humor (When Appropriate)
-Puns and wit make copy memorable—but only if it fits the brand and doesn't undermine clarity.
-
----
-
-## Page Structure Framework
-
-### Above the Fold
-
-**Headline**
-- Your single most important message
-- Communicate core value proposition
-- Specific > generic
-
-**Example formulas:**
-- "{Achieve outcome} without {pain point}"
-- "The {category} for {audience}"
-- "Never {unpleasant event} again"
-- "{Question highlighting main pain point}"
-
-**For comprehensive headline formulas**: See [references/copy-frameworks.md](references/copy-frameworks.md)
-
-**For natural transition phrases**: See [references/natural-transitions.md](references/natural-transitions.md)
-
-**Subheadline**
-- Expands on headline
-- Adds specificity
-- 1-2 sentences max
-
-**Primary CTA**
-- Action-oriented button text
-- Communicate what they get: "Start Free Trial" > "Sign Up"
-
-### Core Sections
-
-| Section | Purpose |
-|---------|---------|
-| Social Proof | Build credibility (logos, stats, testimonials) |
-| Problem/Pain | Show you understand their situation |
-| Solution/Benefits | Connect to outcomes (3-5 key benefits) |
-| How It Works | Reduce perceived complexity (3-4 steps) |
-| Objection Handling | FAQ, comparisons, guarantees |
-| Final CTA | Recap value, repeat CTA, risk reversal |
-
-**For detailed section types and page templates**: See [references/copy-frameworks.md](references/copy-frameworks.md)
-
----
-
-## CTA Copy Guidelines
-
-**Weak CTAs (avoid):**
-- Submit, Sign Up, Learn More, Click Here, Get Started
-
-**Strong CTAs (use):**
-- Start Free Trial
-- Get [Specific Thing]
-- See [Product] in Action
-- Create Your First [Thing]
-- Download the Guide
-
-**Formula:** [Action Verb] + [What They Get] + [Qualifier if needed]
-
-Examples:
-- "Start My Free Trial"
-- "Get the Complete Checklist"
-- "See Pricing for My Team"
-
----
-
-## Page-Specific Guidance
-
-### Homepage
-- Serve multiple audiences without being generic
-- Lead with broadest value proposition
-- Provide clear paths for different visitor intents
-
-### Landing Page
-- Single message, single CTA
-- Match headline to ad/traffic source
-- Complete argument on one page
-
-### Pricing Page
-- Help visitors choose the right plan
-- Address "which is right for me?" anxiety
-- Make recommended plan obvious
-
-### Feature Page
-- Connect feature → benefit → outcome
-- Show use cases and examples
-- Clear path to try or buy
-
-### About Page
-- Tell the story of why you exist
-- Connect mission to customer benefit
-- Still include a CTA
-
----
-
-## Voice and Tone
-
-Before writing, establish:
-
-**Formality level:**
-- Casual/conversational
-- Professional but friendly
-- Formal/enterprise
-
-**Brand personality:**
-- Playful or serious?
-- Bold or understated?
-- Technical or accessible?
-
-Maintain consistency, but adjust intensity:
-- Headlines can be bolder
-- Body copy should be clearer
-- CTAs should be action-oriented
-
----
-
-## Output Format
-
-When writing copy, provide:
-
-### Page Copy
-Organized by section:
-- Headline, Subheadline, CTA
-- Section headers and body copy
-- Secondary CTAs
-
-### Annotations
-For key elements, explain:
-- Why you made this choice
-- What principle it applies
-
-### Alternatives
-For headlines and CTAs, provide 2-3 options:
-- Option A: [copy] — [rationale]
-- Option B: [copy] — [rationale]
-
-### Meta Content (if relevant)
-- Page title (for SEO)
-- Meta description
-
----
-
-## Related Skills
-
-- **copy-editing**: For polishing existing copy (use after your draft)
-- **cro**: If page structure/strategy needs work, not just copy
-- **emails**: For email copywriting
-- **popups**: For popup and modal copy
-- **ab-testing**: To test copy variations
+For applying persuasion principles underneath the copy, see marketing-psychology. For the page structure and conversion mechanics around the copy, see cro. For email-specific copy, see cold-email.
