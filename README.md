@@ -59,10 +59,6 @@ Skills also reference each other. Ask for landing page copy and `copywriting` mi
 
 Picked from a much bigger open-source pack, filtered down to one skill per discipline so you get a full-funnel toolkit instead of ten variations on the same thing: something to get found (SEO, AI SEO), something to say it well (copywriting, psychology), something to plan it (content strategy), something to distribute it (social, ads, cold email), and something to turn attention into leads (CRO, lead magnets).
 
-## Credit and license
-
-These skills are handpicked from [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills), an open-source pack of marketing skills, listed on [skills.sh](https://www.skills.sh/). MIT licensed. Full credit to Corey Haines for the original work; this repo is a curated subset, repackaged for easier setup. The original license is included as [`LICENSE`](LICENSE).
-
 ---
 
 Brought to you by The Workflow.
