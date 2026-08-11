@@ -1,4 +1,4 @@
-![The Workflow](assets/banner.jpg)
+<img src="assets/banner.jpg" alt="The Workflow" width="100%">
 
 # The content marketing skills pack
 
