@@ -61,7 +61,7 @@ Picked from a much bigger open-source pack, filtered down to one skill per disci
 
 ## Credit and license
 
-These skills are sourced from [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills), an open-source pack of marketing skills, listed on [skills.sh](https://www.skills.sh/). MIT licensed. Full credit to Corey Haines for the original work; this repo is a curated subset, repackaged for easier setup. The original license is included as [`LICENSE`](LICENSE).
+These skills are handpicked from [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills), an open-source pack of marketing skills, listed on [skills.sh](https://www.skills.sh/). MIT licensed. Full credit to Corey Haines for the original work; this repo is a curated subset, repackaged for easier setup. The original license is included as [`LICENSE`](LICENSE).
 
 ---
 
