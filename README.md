@@ -1,4 +1,4 @@
-![The Workflow](assets/banner.svg)
+![The Workflow](assets/banner.jpg)
 
 # The content marketing skills pack
 
